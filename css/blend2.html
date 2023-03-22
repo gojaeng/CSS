@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .blend{
+            height: 750px;;
+            border:5px solid;
+            background-color: yellow;
+            background-size:contain;
+            background-image: url(img.jpg);
+            background-blend-mode:exclusion;
+            transition: background-color 5s;
+            
+        }
+        
+        .blend:hover{
+            background-color: rgba(0,255,0,0.5);
+            transition:background-color 3s;
+        }.end{
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Hover the mouse over the photo(PC)<br>
+        Click the photo(Mobile)
+
+    </h1>
+    <div class="blend"></div>
+    <h1 class="end">
+        Move your mouse over the photo(PC)<br>
+        Click outside of the photo(Mobile)
+    </h1>
+    <script>
+        document.addEventListener("touchstart",function() {}, true);
+    </script>
+</body>
+</html>
